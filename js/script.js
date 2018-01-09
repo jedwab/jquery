@@ -1,8 +1,13 @@
 var span = $("span");
-    span.each(function(index, element) {
-});
+var ignored = ["1", "2","3"];
 
-$("span:even").css('color', 'red');
+span.each(function(index, element) {
+  var idList = element.getAttribute("id");
+
+  if (ignored.indexOf(idList) === -1) {
+        $(element).css("color", "red");
+      }
+});
 
 var paragraphs = $('p');
 paragraphs.each(function(index, element) {
@@ -13,5 +18,5 @@ paragraphs.each(function(index, element) {
 });
 
 $("button").click(function(){
-	alert($(this).attr("data-tmp"));
+  alert($(this).attr("data-tmp"));
 });
