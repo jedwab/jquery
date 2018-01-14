@@ -11,10 +11,11 @@ img, #carousel, li {
 
 li {
 	list-style-type: none;
-	float: left;
+	float: right;
 }
 ul {
-	
+	text-decoration: none;
+	list-style-type: none;
 	padding: 0;
 	margin: 0;
 	width: 2000px;
