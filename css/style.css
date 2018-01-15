@@ -2,6 +2,7 @@
 	border: 3px solid green;
 	margin: 150px auto;
 	overflow: hidden;
+	position: relative;
 }
 
 img, #carousel, li {
@@ -14,12 +15,24 @@ li {
 	float: right;
 }
 ul {
-<<<<<<< HEAD
 	text-decoration: none;
 	list-style-type: none;
-=======
->>>>>>> 6d07a023a0888c6bf5b607275c9deab4743b5c0c
 	padding: 0;
 	margin: 0;
 	width: 2000px;
+}
+
+#leftArrow {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+#rightArrow {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
 }
