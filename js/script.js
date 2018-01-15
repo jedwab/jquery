@@ -2,22 +2,14 @@ $(function(){
 });
 
 var carouselList = $("#carousel ul");
-<<<<<<< HEAD
-var carouselChangeTimer;
-
-=======
->>>>>>> 8c3e88e4bc2217c134e738d395e178310c90f78d
 setInterval(changeSlide, 5000);
 
 $("#leftArrow").click(function(){
 	changeSlide('leftDirection');
-	setInterval(5000);
 });
 
 $("#rightArrow").click(function(){		
 	changeSlide('rightDirection');
-	setInterval(5000);
-	
 });
 
 function changeSlide(animationDirection){
@@ -45,8 +37,4 @@ function moveRightSide(){
 		lastItem.after(firstItem);
 		carouselList.css({marginLeft:0});
 }
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 8c3e88e4bc2217c134e738d395e178310c90f78d
