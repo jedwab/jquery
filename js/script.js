@@ -9,7 +9,8 @@ $("#leftArrow").click(function(){
 
 $("#rightArrow").click(function(){		
 	changeSlide('rightDirection');
-
+	
+});
 
 function changeSlide(animationDirection) {
 	if (animationDirection == 'rightDirection') {
@@ -34,4 +35,3 @@ function moveRightSide() {
 		lastItem.after(firstItem);
 		carouselList.css({marginLeft:0});
 }
-
