@@ -1,0 +1,39 @@
+#carousel {
+	border: 3px solid green;
+	margin: 150px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+img, #carousel, li {
+	width: 400px;
+	height: 300px;
+}
+
+li {
+	list-style-type: none;
+	float: right;
+}
+ul {
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 2000px;
+	display: flex;
+} 
+
+#leftArrow {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+#rightArrow {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
