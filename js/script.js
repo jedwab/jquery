@@ -22,14 +22,14 @@ function changeSlide(animationDirection) {
 	}
 }
 
-function moveLeftSide(){
+function moveLeftSide() {
 		var firstItem = carouselList.find("li:first");
 		var lastItem = carouselList.find("li:last");
 		firstItem.before(lastItem);
 		carouselList.css({marginLeft:-400});
 }
 
-function moveRightSide(){
+function moveRightSide() {
 		var firstItem = carouselList.find("li:first");
 		var lastItem = carouselList.find("li:last");
 		lastItem.after(firstItem);
