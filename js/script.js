@@ -1,34 +1,24 @@
-$(function(){
-});
-
 var carouselList = $("#carousel ul");
-<<<<<<< HEAD
-var carouselChangeTimer;
 
-=======
->>>>>>> 8c3e88e4bc2217c134e738d395e178310c90f78d
-setInterval(changeSlide, 5000);
+setInterval(function() {
+	changeSlide('rightDirection')}, 5000);
 
 $("#leftArrow").click(function(){
 	changeSlide('leftDirection');
-	setInterval(5000);
 });
 
 $("#rightArrow").click(function(){		
 	changeSlide('rightDirection');
-	setInterval(5000);
 	
 });
 
-function changeSlide(animationDirection){
-	if (animationDirection == 'rightDirection'){
+function changeSlide(animationDirection) {
+	if (animationDirection == 'rightDirection') {
 		carouselList.animate({'marginLeft':-400}, 1200, moveRightSide);
 	}
-	else if (animationDirection == 'leftDirection'){
-		carouselList.animate({'marginLeft':0}, 1200, moveLeftSide);
-	}
-	else{
-		carouselList.animate({'marginLeft':0}, 1200, moveLeftSide);	
+	else {
+		moveLeftSide();
+		carouselList.animate({'marginLeft':0}, 1200);
 	}
 }
 
@@ -40,13 +30,10 @@ function moveLeftSide(){
 }
 
 function moveRightSide(){
-	var firstItem = carouselList.find("li:first");
-	var lastItem = carouselList.find("li:last");
+		var firstItem = carouselList.find("li:first");
+		var lastItem = carouselList.find("li:last");
 		lastItem.after(firstItem);
 		carouselList.css({marginLeft:0});
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 8c3e88e4bc2217c134e738d395e178310c90f78d

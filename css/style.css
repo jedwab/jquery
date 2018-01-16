@@ -20,22 +20,8 @@ ul {
 	padding: 0;
 	margin: 0;
 	width: 2000px;
+	display: flex;
 } 
-
-#leftArrow {
-	position: absolute;
-	top: 50%;
-	left: 10px;
-	transform: translateY(-50%);
-	cursor: pointer;
-}
-#rightArrow {
-	position: absolute;
-	top: 50%;
-	right: 10px;
-	transform: translateY(-50%);
-	cursor: pointer;
-}
 
 #leftArrow {
 	position: absolute;
